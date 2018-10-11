@@ -1,0 +1,12 @@
+/var/*
+!/var/.config/
+!/var/.npm/
+/var/.config/*
+/var/.npm/*
+!/**/.gitkeep
+!/node_modules/.gitkeep
+
+/dist/*
+/node_modules/*
+!/node_modules/.gitkeep
+/screenshots/*

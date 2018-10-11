@@ -1,0 +1,21 @@
+steps:
+- id: "Install node modules"
+  name: gcr.io/cloud-builders/npm
+  # dir: functions
+  args: ['install']
+
+# - id: "Lint"
+#   name: gcr.io/cloud-builders/npm
+#   dir: functions
+#   args: ['run', 'lint']
+
+# - id: "Test"
+#   name: gcr.io/cloud-builders/npm
+#   dir: functions
+#   args: ['test']
+
+- id: "Deploy"
+  name: gcr.io/cloud-builders/gcloud
+  # dir: functions
+  args: ['functions', 'deploy', 'pokeapi', '--region=europe-west1', '--trigger-http']
+
