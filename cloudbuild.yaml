@@ -4,10 +4,10 @@ steps:
   # dir: functions
   args: ['install']
 
-# - id: "Lint"
-#   name: gcr.io/cloud-builders/npm
-#   dir: functions
-#   args: ['run', 'lint']
+- id: "Lint"
+  name: gcr.io/cloud-builders/npm
+  dir: functions
+  args: ['run', 'lint']
 
 # - id: "Test"
 #   name: gcr.io/cloud-builders/npm
