@@ -17,4 +17,4 @@ steps:
 - id: "Deploy"
   name: gcr.io/cloud-builders/gcloud
   # dir: functions
-  args: ['functions', 'deploy', 'qa_pokeapi', '--entry-point=pokeapi' '--region=europe-west1', '--trigger-http']
+  args: ['functions', 'deploy', 'pokeapi', '--entry-point', 'pokeapi', '--region=europe-west1', '--trigger-http']
