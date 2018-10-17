@@ -8,7 +8,3 @@ exports.pokeapi = (request, response) => {
       response.status(200).send(res.data)
     })
 }
-
-exports.helloworld = (request, response) => {
-  response.status(200).send('Hello World!')
-}
